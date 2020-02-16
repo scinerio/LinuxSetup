@@ -6,9 +6,6 @@ sudo apt update
 
 sudo apt install -y python3-pip
 
-# Install oh-my-zsh
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
 # Pip installations
 wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
 python /tmp/get-pip.py
@@ -29,4 +26,10 @@ mkdir -p $HOME/.config/terminator/plugins
 wget https://git.io/v5Zww -O $HOME"/.config/terminator/plugins/terminator-themes.py"
 
 
-sudo apt install -y zsh
+sudo apt install -y zsh 
+
+sudo apt install -y zsh-syntax-highlighting 
+
+
+# Install oh-my-zsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
