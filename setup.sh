@@ -4,7 +4,7 @@ echo "Installing the coolest packages ever"
 
 sudo apt update
 
-# TMUX for losers
+# ZSH accomponied with TMUX for losers
 sudo apt install zsh terminator 
 
 # Install oh-my-zsh
