@@ -22,10 +22,11 @@ pip install -r /opt/impacket/requirements.txt
 git clone https://github.com/Tib3rius/AutoRecon.git /opt/AutoRecon
 pip install -r /opt/AutoRecon/requirements.txt
 
-# Setup for terminator themes
-# https://github.com/EliverLara/terminator-themes
+# Color themes
+sudo apt install -y terminator
 pip install requests
 mkdir -p $HOME/.config/terminator/plugins
 wget https://git.io/v5Zww -O $HOME"/.config/terminator/plugins/terminator-themes.py"
+
 
 sudo apt install -y zsh
