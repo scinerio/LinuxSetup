@@ -4,18 +4,22 @@ echo "Installing the coolest packages ever"
 
 sudo apt update
 
-# ZSH accomponied with TMUX for losers
-sudo apt install zsh terminator 
+sudo apt install -y zsh python3-pip
 
 # Install oh-my-zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
+# Pip installations
+wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
+python /tmp/get-pip.py
+rm /tmp/get-pip.py
+
 # Impacket download
-git clone https://github.com/SecureAuthCorp/impacket.git /opt/ 
+git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket
 pip install -r /opt/impacket/requirements.txt
 
 # AutoRecon for CTF things
-git clone https://github.com/Tib3rius/AutoRecon.git /opt/
+git clone https://github.com/Tib3rius/AutoRecon.git /opt/AutoRecon
 pip install -r /opt/AutoRecon/requirements.txt
 
 # Setup for terminator themes
