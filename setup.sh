@@ -4,7 +4,7 @@ echo "Installing the coolest packages ever"
 
 sudo apt update
 
-sudo apt install -y python3-pip
+sudo apt install -y python3-pip gobuster
 
 # Pip installations
 wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
