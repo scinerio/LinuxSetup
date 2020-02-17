@@ -28,7 +28,7 @@ wget https://git.io/v5Zww -O $HOME"/.config/terminator/plugins/terminator-themes
 
 sudo apt install -y zsh 
 
-sudo apt install -y zsh-syntax-highlighting 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 
 # Install oh-my-zsh
