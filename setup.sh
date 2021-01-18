@@ -39,15 +39,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Install oh-my-zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
-# Set ZSH as default shell
-sudo chsh -s $(which zsh)
-
 # Symlink ZSH config for root user
 ln -s $HOME/.oh-my-zsh           /root/.oh-my-zsh
 ln -s $HOME/.zshrc               /root/.zshrc
 
 # Get Pwncat
-git clone https://github.com/calebstewart/pwncat.git /opt/
+mkdir /opt/pwncat
+git clone https://github.com/calebstewart/pwncat.git /opt/pwncat
 
 # Get FFUF
-git clone https://github.com/ffuf/ffuf.git /opt/
+mkdir /opt/ffuf
+git clone https://github.com/ffuf/ffuf.git /opt/ffuf
+
+
+# Set ZSH as default shell
+sudo chsh -s $(which zsh)
+
